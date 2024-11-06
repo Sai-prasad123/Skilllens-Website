@@ -1,0 +1,130 @@
+.patro {
+    margin: 0px 0px;
+    float: left;
+    width: 100%;
+}
+
+.patro p {
+    line-height: 1.8em;
+}
+
+.patro h4 {
+    margin: 0px 0px;
+    padding: 10px 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.patro img {
+    margin: auto;
+    padding: 9px;
+
+    text-align: center;
+    display: block;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.16);
+    width: 200px;
+    border: 1px dashed #000;
+}
+
+.tab_sec {
+    border-top: 1px solid #d0d0d0;
+    margin-top: 30px;
+}
+
+.patro h6 {
+    margin: 0px 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.our-team h5 {
+
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.our-team {
+    padding: 0 0 40px;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #f77c00;
+    box-shadow: 2px 2px 10px #e1e1e1;
+}
+
+.our-team:hover {
+    border-bottom: 5px solid #2f2f2f;
+}
+
+.our-team .pic {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.our-team .pic:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 1;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+    box-shadow: 2px 2px 0px #e1e1e1;
+}
+
+.our-team:hover .pic:before {
+    height: 100%;
+    background: #2f2f2f;
+}
+
+.our-team .pic:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ffffff00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s linear 0s;
+}
+
+.our-team .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+    position: relative;
+    z-index: 2;
+}
+
+.patro h6 {
+    margin-bottom: 10px;
+}

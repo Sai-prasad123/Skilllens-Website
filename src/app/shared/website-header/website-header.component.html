@@ -1,0 +1,122 @@
+<div class="sticky">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid" style="margin-left: 20px;">
+      <a class="navbar-brand" [routerLink]="['/']"><img src="assets/images/logo.jpg" alt="Skilllens Logo" /></a>
+      <!-- <a class="car" [routerLink]="['/cart']" routerLinkActive="router-link-active">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+        <div style="font-size: 10px">{{ cartSize }} items</div>
+      </a> -->
+      <button class="navbar-toggler" type="button" #btntoggle data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a class="nav-link" [routerLink]="['/']" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}"><i class="fas fa-home"></i>
+              Home</a>
+          </li>
+          <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a class="nav-link" [routerLink]="['/aboutus']" routerLinkActive="active"><i class="fas fa-info-circle"></i>
+              About Us</a>
+          </li>
+
+          <li class="nav-item dropdown" data-bs-toggle="collapse" data-bs-target="navbar-collapse.show">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              [ngClass]="{'active': c1.isActive || c2.isActive|| c3.isActive|| c4.isActive || c5.isActive || c6.isActive }"><i
+                class="fas fa-cogs"></i>
+              Services</a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="nav-link" [routerLink]="['/finishing-school']" routerLinkActive="active"
+                        #c1="routerLinkActive">Finishing School </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/campus-recruitment-training']" routerLinkActive="active"
+                        #c2="routerLinkActive">Campus Recruitment Training </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/company-specific-training']" routerLinkActive="active"
+                        #c3="routerLinkActive">Company Specific Training </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/hiring-assessments']" routerLinkActive="active"
+                        #c4="routerLinkActive">Hiring
+                        Assessments </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/workshops-seminars']" routerLinkActive="active"
+                        #c5="routerLinkActive">Workshops & Seminars </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/corporate-training']" routerLinkActive="active"
+                        #c6="routerLinkActive">Corporate Training </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown" data-bs-toggle="collapse" data-bs-target="navbar-collapse.show">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              [ngClass]="{'active': d1.isActive || d2.isActive }"> <i class="far fa-handshake"></i>
+              Pratibha</a>
+
+            <div class="dropdown-menu test" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="nav-link" [routerLink]="['/recruiting-companies']" routerLinkActive="active"
+                        #d1="routerLinkActive">Recruiting Companies </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" [routerLink]="['/voice-of-industry']" routerLinkActive="active"
+                        #d2="routerLinkActive">Voice of Industry</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            <a class="nav-link" [routerLink]="['/contactus']" routerLinkActive="active"><i
+                class="fas fa-map-marker-alt"></i> Contact</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav ms-auto" style="margin-right: 25px;">
+          <li class="nav-item">
+            <a class="sign" [routerLink]="['/login']" routerLinkActive="router-link-active">Reach Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<!-- 
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" (click)="closeModal()">&times;</button>
+        <a [routerLink]="" (click)="gotoCart()" data-dismiss="modal"> <img src="assets/images/offer.jpg"
+            class="img-fluid" alt="offer-image"></a>
+      </div>
+    </div>
+  </div>
+</div> -->

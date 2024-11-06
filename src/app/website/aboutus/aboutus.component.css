@@ -1,0 +1,47 @@
+.tab_content p {
+    font-size: 11pt !important;
+    text-align: justify;
+}
+
+.skills {
+    min-height: 260px;
+    margin-bottom: 20px;
+}
+
+.skillgap {
+    text-align: center;
+
+}
+
+.story {
+    padding: 50px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px #e1e1e1;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+li {
+    list-style: circle;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 767px) {
+    .story {
+        padding: 20px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    .skills {
+        min-height: 310px;
+    }
+}

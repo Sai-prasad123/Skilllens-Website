@@ -1,0 +1,912 @@
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+
+        <ul class="carousel-indicators">
+            <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+            <li data-bs-target="#demo" data-bs-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/banner1.jpg" alt="E-Learning">
+
+                <div class="carousel-caption">
+                    <h1>Learning (Shiksha)</h1>
+
+                    <p>Learning gives creativity, creativity leads to thinking, thinking provides knowledge, and
+                        knowledge makes you great.
+                    </p>
+                    <p><i>A.P.J. Abdul Kalam</i></p>
+                    <h6>“With Us - Learn Skills for Tomorrow”
+                    </h6>
+                    <a class="sign mt-3" [routerLink]="['/e-learning']">About Shiksha</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/banner2.jpg" alt="e-assessment">
+                <div class="carousel-caption">
+
+                    <h1>E-Assessments (Sameeksha)</h1>
+
+                    <p>Our Easy-to-Use online evaluation platform helps understand your performance. <br> It supports
+                        Coding, Quiz
+                        / Multiple Choice & Descriptive questions.
+                    </p>
+                    <h6>“Practice Propels Success”</h6>
+
+                    <a class="sign mt-3" [routerLink]="['/e-assessment']">About Sameeksha</a>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/banner3.jpg" alt="Pratibha-banner">
+
+                <div class="carousel-caption">
+
+                    <h1>Industry Connect (Pratibha)</h1>
+
+                    <p>We promise all the recruiting companies to get connected with all our subscribers who turn to be
+                        the best
+                        performers.
+                    </p>
+                    <h6> “Performers are always Recognized” </h6>
+                    <a class="sign mt-3" [routerLink]="['/freshers-recruitment']">About Pratibha</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon" alt="back">.</span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon" alt="next">.</span>
+        </a>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 " style="background-color: #F77C00; margin-top: 15px;">
+            <div class="latest">
+
+                <h3>Latest News</h3>
+                <marquee behavior="scroll"
+                    style="font-family: sans-serif;font-size: 16px;color: #FFFFFF;line-height:30px;display: flex;"
+                    bgcolor="#F77C00" onmouseover="this.stop();" onmouseout="this.start();">
+
+                    <i class="fa fa-arrow-circle-o-right" style="margin-left:-10px;"></i>
+
+                    <a style="font-family: sans-serif;font-size: 16px;color: #FFFFFF;"
+                        href="https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-12" target="blank">
+
+                        What's new in C# 12
+                        <span class="label label-danger blink_text"
+                            style="margin-right: 0%;position: absolute;top: 3px;">New</span>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+
+                    </a>
+
+                    <i class="fa fa-arrow-circle-o-right" style="margin-left:-10px;"></i>
+
+                    <a style="font-family: sans-serif;font-size: 16px;color: #FFFFFF;"
+                        href="https://www.oracle.com/java/technologies/javase/8-whats-new.html" target="blank">
+
+                        What's new in Java
+                        <span class="label label-danger blink_text"
+                            style="margin-right: 0%;position: absolute;top: 3px;">New</span>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                    </a>
+
+                    <i class="fa fa-arrow-circle-o-right" style="margin-left:-10px;"></i>
+
+                    <a style="font-family: sans-serif;font-size: 16px;color: #FFFFFF;"
+                        href="https://pythoninsider.blogspot.com/2024/03/python-3130-alpha-5-is-now-available.html"
+                        target="blank">
+
+                        Python 3.13.0 alpha 5 is now available
+                        <span class="label label-danger blink_text"
+                            style="margin-right: 0%;position: absolute;top: 3px;">New</span>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;
+                    </a>
+
+                </marquee>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="top">
+    <h1 class="text-center"><span class="heading">Top Skills </span>in Demand</h1>
+    <br>
+    <div class="container">
+        <div class="row ">
+
+
+            <div class="col-6 col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/coding-with-java']"><img src="assets/images/java.png" alt="java">
+                    </a>
+                </div>
+                <p class="mostselling">Coding with Java</p>
+            </div>
+
+            <div class="col-6  col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/coding-with-csharp']"> <img src="assets/images/dotnet-core.png"
+                            alt="english verbal"></a>
+                </div>
+                <p class="mostselling">Coding with C#.Net</p>
+            </div>
+
+            <div class="col-6 col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/coding-with-python']"><img src="assets/images/coding-with-python.png"
+                            alt="Presentation and interview"></a>
+                </div>
+                <p class="mostselling">Coding with Python </p>
+            </div>
+
+            <div class="col-6 col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/data-science']"><img src="assets/images/data-science.png"
+                            alt="problem solving"></a>
+                </div>
+                <p class="mostselling">Data Science</p>
+            </div>
+
+            <div class="col-6 col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/ai-ml']"><img src="assets/images/ai-and-ml.png" alt="coding with cds">
+                    </a>
+                </div>
+                <p class="mostselling">AI & ML</p>
+            </div>
+
+            <div class="col-6 col-lg-2 col-md-2 mostselling sell">
+                <div class="icons mx-auto">
+                    <a [routerLink]="['/business-analyst']"><img src="assets/images/business-analyst.png "
+                            alt="assessment "></a>
+                </div>
+                <p class="mostselling">Business Analyst</p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Carousel Wrapper-->
+
+
+
+<div id="what-we-do">
+    <br><br>
+    <div class="container">
+        <h1 class="text-center "> <span class="heading">Our </span>Services</h1>
+        <br>
+        <div class="row mt-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-1">
+                        <h3>Finishing School</h3>
+                        <p class="card-text">Finishing school provides essential life skills and polish for personal
+                            and professional success.</p>
+                        <a routerLink="/finishing-school">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-2">
+                        <h3>Campus Recruitment Training</h3>
+                        <p class="card-text">Enhancing employability through targeted skill development for campus
+                            recruitment success.
+                        </p>
+                        <a routerLink="/campus-recruitment-training">Read more<i
+                                class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-3">
+                        <h3>Company Specific Training</h3>
+                        <p class="card-text">Tailored student training programs designed to meet specific company needs
+                            and objectives.</p>
+                        <a routerLink="/company-specific-training">Read more<i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-4">
+                        <h3>Hiring Assessments</h3>
+                        <p class="card-text">Our Hiring assessments streamline candidate evaluation to identify the best
+                            fit for roles.
+                        </p>
+                        <a routerLink="/hiring-assessments">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-5">
+                        <h3>Workshops & Seminars</h3>
+                        <p class="card-text">Engage, Learn, and Grow: Elevating knowledge through interactive Workshops
+                            & Seminars.</p>
+                        <a routerLink="/workshops-seminars">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-block block-6">
+                        <h3>Corporate Training</h3>
+                        <p class="card-text">Corporate training enhances workforce skills and knowledge to drive
+                            organizational success.</p>
+                        <a routerLink="/corporate-training">Read more<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </section> -->
+
+
+
+
+
+<!-- 
+<div class="learn ">
+    <h1 class="text-center "> <span class="heading">Our </span>Services</h1>
+    <br>
+    <div class="container">
+
+        <nav>
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true"><i class="fa fa-bars" aria-hidden="true"></i> All</a>
+                <a class="nav-item nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab"
+                    aria-controls="nav-profile" aria-selected="false"><i class="fa fa-university"
+                        aria-hidden="true"></i>
+                    Finishing School</a>
+                <a class="nav-item nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab"
+                    aria-controls="nav-contact" aria-selected="false"><i class="fa fa-suitcase" aria-hidden="true"></i>
+                    Campus Recruitment Training</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" href="#nav-about" role="tab"
+                    aria-controls="nav-about" aria-selected="false"><i class="fa fa-train" aria-hidden="true"></i>
+                    Company Specific Training</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" href="#nav-ssc" role="tab"
+                    aria-controls="nav-about" aria-selected="false"><i class="fa fa-users" aria-hidden="true"></i>
+                    Hiring Assessments</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" href="#nav-edu" role="tab"
+                    aria-controls="nav-about" aria-selected="false"><i class="fa fa-graduation-cap"
+                        aria-hidden="true"></i> Workshops & Seminars</a>
+                <a class="nav-item nav-link" id="nav-about-tab" data-bs-toggle="tab" href="#nav-edu" role="tab"
+                    aria-controls="nav-about" aria-selected="false"><i class="fa fa-graduation-cap"
+                        aria-hidden="true"></i> Corporate Training</a>
+
+            </div>
+        </nav>
+
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/finishing-school'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/cat.jpg" class="item-image" alt="cat" title="skill lens">
+                                <span class="item-name ">Finishing School</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/ap-icet'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/apicet.jpg" class="item-image" alt="ap-icet" title="skill lens">
+                                <span class="item-name ">Campus Recruitment Training</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/ts-icet'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/tsicet.jpg" class="item-image" alt="ts-icet" title="skill lens">
+                                <span class="item-name ">Company Specific Training</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/ibps-clerk'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ibps.jpg" class="item-image" alt="ibps-clerk "
+                                    title="skill lens">
+                                <span class="item-name ">Hiring Assessments</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/ibps-po'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ibps.jpg" class="item-image" alt="ibps-po " title="skill lens">
+                                <span class="item-name ">Workshops & Seminars</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 ">
+                        <a [routerLink]="[ '/rrb-je'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/rrb-logo.jpg" class="item-image" alt="rrb-je "
+                                    title="skill lens">
+                                <span class="item-name ">Corporate Training</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row">
+
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ibps-clerk'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ibps.jpg" class="item-image" alt="ibps-clerk"
+                                    title="skill lens">
+                                <span class="item-name ">IBPS Clerk</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ibps-po'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ibps.jpg" class="item-image" alt="ibps-po" title="skill lens">
+                                <span class="item-name ">IBPS PO</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/sbi-clerk'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/sbi.jpg" class="item-image" alt="sbi-clerk" title="skill lens">
+                                <span class="item-name ">SBI Clerk</span>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/sbi-po'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/sbi.jpg" class="item-image" alt="sbi-po" title="skill lens">
+                                <span class="item-name ">SBI PO</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/lic-assistant'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/lic.webp" class="item-image" alt="sbi-po" title="skill lens">
+                                <span class="item-name ">LIC Assistant</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/irda'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/irda.webp" class="item-image" alt="sbi-po" title="skill lens">
+                                <span class="item-name ">IRDA</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row">
+
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/tcs-digital'] ">
+                            <div class="item-card ">
+
+                                <img src="assets/images/tcs-logo.jpg" class="item-image" alt="tcs-digital"
+                                    title="skill lens">
+                                <span class="item-name ">Mock TCS Digital</span>
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/tcs-ninja'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/tcs-logo.jpg" class="item-image" alt="tcs-ninja "
+                                    title="skill lens">
+
+                                <span class="item-name ">Mock TCS Ninja</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/wipro'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/wipro.jpg" class="item-image" alt="wipro " title="skill lens">
+                                <span class="item-name ">Mock Wipro NQT</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/infytq'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/infytq.jpg" class="item-image" alt="infytq " title="skill lens">
+                                <span class="item-name ">Mock INFYTQ</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="row">
+
+
+
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/rrb-group-d'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/rrb-logo.jpg" class="item-image" alt="rrb-group-d"
+                                    title="skill lens">
+                                <span class="item-name ">RRB Group D</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/rrb-ntpc'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/rrb-logo.jpg" class="item-image" alt="rrb-ntpc"
+                                    title="skill lens">
+                                <span class="item-name ">RRB NTPC</span>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/rrb-je'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/rrb-logo.jpg" class="item-image" alt="rrb-je"
+                                    title="skill lens">
+                                <span class="item-name ">RRB JE</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/rrb-alp'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/rrb-logo.jpg" class="item-image" alt="rrb-alp"
+                                    title="skill lens">
+                                <span class="item-name ">RRB ALP</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-ssc" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="row">
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ssc-cgl'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ssc.jpg" class="item-image" alt="ssc-cgl" title="skill lens">
+                                <span class="item-name ">SSC CGL</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ssc-chsl'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/ssc.jpg" class="item-image" alt="ssc-chsl" title="skill lens">
+                                <span class="item-name ">SSC CHSL</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-edu" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="row">
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/cat'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/cat.jpg" class="item-image" alt="cat" title="skill lens">
+                                <span class="item-name ">CAT</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ap-icet'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/apicet.jpg" class="item-image" alt="ap icet" title="skill lens">
+                                <span class="item-name ">AP ICET</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/ts-icet'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/tsicet.jpg" class="item-image" alt="ts icet" title="skill lens">
+                                <span class="item-name ">TS ICET</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/tissnet'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/tiss.jpg" class="item-image" alt="tissnet" title="skill lens">
+                                <span class="item-name ">TISSNET</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-3 ">
+                        <a [routerLink]="[ '/tissmat'] ">
+                            <div class="item-card ">
+                                <img src="assets/images/tiss.jpg" class="item-image" alt="tissmat" title="skill lens">
+                                <span class="item-name ">TISSMAT</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div> -->
+
+<br>
+
+<div class="offer mt-5">
+    <h1 class="text-center ">Our
+        <span class="heading">Key Highlights</span>
+    </h1>
+
+    <br>
+    <div class="container mt-5">
+        <div class="row ">
+
+            <div class="col-lg-4 col-md-6 ">
+                <div class="skills ">
+
+                    <h5><img src="assets/images/e-learning-icon.png " alt="e-learning-icon"> <span
+                            class="ml">E-Learning</span>
+                    </h5>
+                    <ul>
+                        <li>Concepts delivered by experts in the simplest way possible</li>
+                        <li>Scientific approach of Instructional design to increase learning effectiveness</li>
+                        <li>Topic-wise video courses coupled with assessments</li>
+                        <li>1000+ video’s lectures</li>
+                        <li>Save your study research time by 40%</li>
+                        <li>
+                            Choose your own Skill
+                        </li>
+                        <li>Economical - Pocket-friendly pricing</li>
+                    </ul>
+                    <a class="sign-p" [routerLink]="[ '/e-learning'] ">About Shiksha</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="skills ">
+
+                    <h5><img src="assets/images/e-assessment-icon.png " alt="e-assessment-icon"> <span
+                            class="ml">E-Assessments</span></h5>
+                    <ul>
+                        <li>Full Length Mock Tests</li>
+                        <li>Detailed Analysis of Result - Section wise</li>
+                        <li>Unique Questions</li>
+                        <li>Questions developed by experts</li>
+                        <li>Supports 22+ programming languages, Quiz / Multiple choice & Descriptive questions</li>
+                        <li>
+                            Choose your own Assessment
+                        </li>
+                        <li>Economical - Pocket-friendly pricing</li>
+                    </ul>
+                    <a class="sign-p " [routerLink]="[ '/e-assessment'] ">About Sameeksha</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="skills ">
+
+                    <h5><img src="assets/images/industry-connect-icon.png " alt="industry-connect-icon"> <span
+                            class="ml">Industry
+                            Connect</span></h5>
+                    <ul>
+                        <li>Learning & Performance analysis of each candidate</li>
+                        <li>In built skill based question library</li>
+                        <li>Recruit more candidates in less time</li>
+                        <li>Concurrent live tests</li>
+                        <li>Conduct your Own Assessments - Yes! as a recruiting company you can create your own hiring
+                            examination
+                        </li>
+                        <li>
+                            Proctoring Enabled
+                        </li>
+                        <li>Enhance your branding with our white labeling feature</li>
+                    </ul>
+                    <a class="sign-p" [routerLink]="[ '/freshers-recruitment'] ">About Pratibha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="counter">
+    <div class="container">
+        <div class="row ">
+
+            <div class="col-md-8 ">
+
+                <h1 class="text-center ">Our <span class="heading">Reach</span></h1>
+                <br>
+
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-xs-12 col-lg-6 col-md-6 ">
+                            <div class="text-center counte ">
+                                <div class="fun-fact__count ">11763</div>
+                                <span class="fun-cfact__title ">No. of Subscribers</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6 col-md-6 ">
+                            <div class="text-center count ">
+                                <div class="fun-fact__count ">26251</div>
+                                <span class="fun-fact__title ">No. of Assessments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-xs-12 col-lg-6 col-md-6 ">
+                            <div class="text-center counte ">
+                                <div class="fun-fact__count ">117</div>
+                                <a class="fun-fact__title " [routerLink]="['/colleges']"
+                                    routerLinkActive="router-link-active">No. of
+                                    Colleges</a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6 col-md-6 ">
+                            <div class="text-center count ">
+                                <div class="fun-fact__count ">256260</div>
+                                <span class="fun-fact__title ">No. of Views</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="assets/images/reach.gif " class="img-fluid reach" alt="reach ">
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--<div class="testimonial ">
+      <h5><span class="heading"> Testimonials</span></h5><br>
+      <div class="container">
+          <div class="row ">
+  
+              <div class="col-md-4 ">
+                  <div id="demo" class="carousel slide text-center " data-ride="carousel ">
+  
+  
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student1 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student2 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student3 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                      </div>
+  
+  
+  
+                  </div>
+  
+              </div>
+              <div class="col-md-4 ">
+                  <div id="demo" class="carousel slide text-center " data-ride="carousel ">
+  
+  
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-test1 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-test2 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-test3 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                      </div>
+  
+  
+  
+                  </div>
+  
+              </div>
+              <div class="col-md-4 ">
+                  <div id="demo " class="carousel slide text-center " data-ride="carousel ">
+  
+  
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-car1 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-car2 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="skills-testim ">
+                                  <img src="assets/images/student.png " alt="student-car3 ">
+  
+                                  <p>Compile organize,validate &submit claimsto be processed for fuel tax recovery</p>
+                                  <p>- Preethi</p>
+                              </div>
+                          </div>
+                      </div>
+  
+  
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="video-testimonial ">
+      <h5 class="text-center "><span class="heading">Stake Holder</span> Voice</h5><br>
+      <div class="container ">
+          <div class="row ">
+  
+              <div class="col-md-4 ">
+                  <div id="demo " class="carousel slide text-center " data-ride="carousel ">
+  
+  
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " controls="2 " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " controls="2 " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " controls="2 " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                      </div>
+  
+  
+                      <br>
+                      <p class="register ">College</p>
+                  </div>
+  
+              </div>
+              <div class="col-md-4 ">
+                  <div id="demo " class="carousel slide text-center " data-ride="carousel ">
+  
+  
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                      </div>
+  
+  
+                      <br>
+                      <p class="register ">Company</p>
+  
+                  </div>
+  
+              </div>
+              <div class="col-md-4 ">
+                  <div id="demo " class="carousel slide text-center " data-ride="carousel ">
+  
+  
+                      <div class="carousel-inner ">
+                          <div class="carousel-item active ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                          <div class="carousel-item ">
+                              <iframe width="300 " height="300 " src="https://www.youtube.com/embed/lXqHjBoSiGs " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                          </div>
+                      </div>
+  
+  
+                      <br>
+                      <p class="register ">Parent</p>
+  
+                  </div>
+  
+              </div>
+          </div>
+      </div>
+  </div>-->

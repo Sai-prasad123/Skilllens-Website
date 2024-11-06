@@ -1,0 +1,39 @@
+td,
+th {
+    text-align: center;
+}
+
+.obj {
+    border: none;
+    padding: 30px 0 0 0;
+}
+
+
+.method li,
+.highlight li,
+.bank li {
+    list-style: none !important;
+    text-align: justify;
+    margin-bottom: 10px !important;
+}
+
+ul {
+    --icon-space: 1.3em;
+    list-style: none !important;
+    padding: 0;
+}
+
+li {
+    padding-left: var(--icon-space);
+    text-align: left !important;
+}
+
+li:before {
+    content: "\f00c";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: calc(var(--icon-space) * -1);
+    width: var(--icon-space);
+    color: #f77c00;
+}

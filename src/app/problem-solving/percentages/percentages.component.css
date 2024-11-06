@@ -1,0 +1,40 @@
+a.nav-item.nav-link h5 {
+    font-size: 14px;
+}
+
+a.nav-item.nav-link h6 {
+    font-size: 12px;
+}
+
+.shiksha {
+    margin: 40px 0 0;
+}
+
+.foo {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+
+.frac>span {
+    display: block;
+    padding: 0.1em;
+}
+
+.frac span.bottom {
+    border-top: thin solid black;
+}
+
+.frac span.symbol {
+    display: none;
+}

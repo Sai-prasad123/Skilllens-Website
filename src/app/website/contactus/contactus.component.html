@@ -1,0 +1,162 @@
+<div class="inner_banner">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-md-4">
+                <div class="contact">
+                    <h5><img src="assets/images/mail-icon.jpg" class="img-fluid" alt="mail-icon"></h5>
+                    <h5><b>Email Us</b></h5>
+                    <h5><a href="mailto:info@skilllens.com">info@skilllens.com</a></h5>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="contact">
+                    <h5><img src="assets/images/call-icon.jpg" class="img-fluid" alt="call-icon"></h5>
+                    <h5><b>Call Us</b></h5>
+                    <h5><a href="tel:7013814324"> +91 7013814324 </a></h5>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="contact">
+                    <h5>
+                        <img src="assets/images/sales1.png" class="img-fluid" alt="call-icon">
+                    </h5>
+                    <h5><b>M. Kumar Raja - Director</b>
+                    </h5>
+
+                    <h5>
+                        8686061992, kumarraja@skilllens.com
+                    </h5>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="about">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xs-12 col-md-6">
+                <div class="row">
+
+
+                    <div class="skill">
+
+                        <h6 style="color:#f77c00;"><i class="fa icon fa-map-marker fa-2x" aria-hidden="true"></i><b>
+                                Skill Lens</b>
+                        </h6>
+                        <p>
+                            A unit of &nbsp; <b>Hiranya IT Solutions Pvt. Ltd.</b>
+                            <br>2nd Floor, Maruthi Complex,<br> Opp. R.S. Brothers,<br> KPHB, Hyderabad - 500072.
+                        </p>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="skill">
+                        <h6 style="color:#f77c00;">Talk to our team about your requirement!
+                        </h6>
+                        <p>We're excited to talk to you about your requirement. <br> Please fill out the form and we'll
+                            get back to
+                            you soon.
+                        </p>
+                        <p>- 24/7 global Sales and Support teams</p>
+
+                        <p>- Talk about Learning skills, E-assessment options and pricing
+                        </p>
+                        <p>- Find the best solution for your requirement
+                        </p>
+                        <p>- Get best quote for selected service
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+                <form #contactForm='ngForm' (ngSubmit)="contactForm.valid && RequestContact(contactForm)"
+                    name="contactForm">
+                    <p> I am a</p>
+                    <div class="form-group">
+
+                        <input type="radio" name="customerType" value="Student" [(ngModel)]="contactInfo.profession"
+                            checked>Student
+                        <input type="radio" name="customerType" value="Parent" [(ngModel)]="contactInfo.profession"
+                            class="mt-1">Parent
+                        <input type="radio" name="customerType" value="BusinessAssociate"
+                            [(ngModel)]="contactInfo.profession">Business Associate
+                        <input type="radio" name="customerType" value="College"
+                            [(ngModel)]="contactInfo.profession">College
+                        <input type="radio" name="customerType" value="Corporate"
+                            [(ngModel)]="contactInfo.profession">Corporate
+                    </div>
+                    <div class="form-group mt-3">
+                        <input name="name" type="text" class="form-control" id="" placeholder="Name" required=""
+                            #Name="ngModel" maxlength="80" [(ngModel)]="contactInfo.name">
+                        <small class="text-danger"
+                            *ngIf="Name.invalid && Name.touched || Name.invalid && contactForm.submitted">Name is
+                            Mandatory</small>
+                    </div>
+
+                    <div class="form-group form_left mt-3">
+                        <input name="email" type="email" class="form-control" id="" placeholder="Email" required=""
+                            #Email="ngModel" maxlength="80" [(ngModel)]="contactInfo.email">
+                        <small class="text-danger"
+                            *ngIf="Email.invalid && Email.touched || Email.invalid && contactForm.submitted">Email is
+                            Mandatory</small>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input type="text" name="phone" class="form-control" id="phone"
+                            onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10"
+                            placeholder="Mobile No." required="" #Mobile="ngModel" [(ngModel)]="contactInfo.mobile">
+                        <small class="text-danger"
+                            *ngIf="Mobile.invalid && Mobile.touched || Mobile.invalid && contactForm.submitted">Mobile
+                            is
+                            Mandatory</small>
+                    </div>
+                    <p class="mt-3"> Service Looking</p>
+                    <div class="form-group">
+
+                        <input type="checkbox" name="service1" [(ngModel)]="contactInfo.learning"
+                            value="E-Learning">E-Learning
+                        <input type="checkbox" name="service2" [(ngModel)]="contactInfo.assessment"
+                            value="E-Assesment">E-Assesment
+                        <input type="checkbox" name="service3" [(ngModel)]="contactInfo.industry"
+                            value="Industry Connect">Industry
+                        Connect <br>
+                        <input type="checkbox" name="service4" [(ngModel)]="contactInfo.bA"
+                            value="Business Association">Business
+                        Association
+
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control textarea-contact" rows="3" id="comment" name="comment"
+                            placeholder="Type Your Message/Feedback here..." #Message="ngModel"
+                            [(ngModel)]="contactInfo.message"></textarea>
+                        <br>
+                        <button class="btn sign"> <span class="glyphicon glyphicon-send"></span> <span *ngIf="loading"
+                                class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2730206614483!2d78.39904551487784!3d17.494475788014526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd4badf64273fd261!2sSkill%20Lens!5e0!3m2!1sen!2sin!4v1606360866026!5m2!1sen!2sin"
+        width="100%" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+</div>
